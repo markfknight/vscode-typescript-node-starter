@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "target": "es2015",
+    "lib": ["es6", "dom"],
+    "rootDir": "src/",
+    "typeRoots": [
+      "./node_modules/@types/"
+    ],
+    "outDir": "dist/"
+  },
+  "exclude": [
+    "node_modules",
+    "jspm_modules"
+  ]
+}

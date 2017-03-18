@@ -1,0 +1,15 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "author": "markfknight (dev@markfknight.com)",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.5",
+    "ts-node": "^2.1.0",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  }
+}
