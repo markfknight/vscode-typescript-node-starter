@@ -1,6 +1,6 @@
 {
-  "name": "codewars",
-  "version": "1.0.0",
+  "name": "vscode-typescript-node-starter",
+  "version": "1.0.1",
   "author": "markfknight (dev@markfknight.com)",
   "license": "MIT",
   "scripts": {
