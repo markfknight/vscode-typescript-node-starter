@@ -29,7 +29,6 @@ via **yarn**
     yarn add packageName
 ```
 
-
 If typings are missing/not included with the base packge, the majority of popular npm packages have typing defined on npm under the @types scoping.
 
 Install as dev dependancies:
@@ -44,6 +43,28 @@ via **yarn**
     yarn add @types/packageName -D
 ```
 
+Both steps can be completed in one by using [typac](https://github.com/ewgenius/typac)
+
+Install typac globally
+
+via npm
+```
+    npm install -g typac
+```
+
+via yarn
+```
+    yarn add global typac
+```
+
+Install a package using the typac command
+
+e.g.
+```
+   typac moment
+```
+
+typac installs moment as a dependancy and @types/moment as a dev dependancy, via npm or if you have it installed yarn.
 
 ## Building
 
@@ -57,9 +78,9 @@ Shortcut on Windows/Linux: Ctrl + Shift + B, macOS: Command + Shift + B
 Set breakpoints in your Ts code and press F5 to start the debugger, happy debugging!
 
 
-## Debugging with Nodemon
+## Debugging with [nodemon](https://github.com/remy/nodemon)
 
-Nodemon enables live reload of you node application, so when you make a change to code,
+nodemon enables live reload of you node application, so when you make a change to code,
 the application is restarted.
 
 Nodemon debugging is supported. To enable, install nodemon globally
