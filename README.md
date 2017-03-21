@@ -1,9 +1,25 @@
 # VSCode TypeScript node starter
 Starter for developing Node apps in TypeScript with setup for VS Code debugging and optional nodemon.
 
+## Prerequisites
+
+To start, **[node](https://nodejs.org)** is required.
+
+The TypeScript Compiler (tsc) is required in your path, install globally:
+
+via **npm**
+```
+    npm -g install typescript
+```
+
+via **[yarn](https://yarnpkg.com)**
+```
+    yarn add global typescript
+```
+
 ## Getting started
 
-Fork the repo and clone to your local machine, open a terminal / command line and get base packages
+Fork the repo and clone to your local machine, open a terminal / command line and get base packages:
 
 via **npm**
 ```
@@ -15,20 +31,19 @@ via **[yarn](https://yarnpkg.com)**
     yarn
 ```
 
-## Adding Packages
+## Adding 3rd Party Packages
 
-Open a terminal / command line, add a package
+Open a terminal / command line, add a package:
 
 via **npm**
 ```
-    npm install packageName
+    npm install packageName --save
 ```
 
 via **yarn**
 ```
     yarn add packageName
 ```
-
 
 If typings are missing/not included with the base packge, the majority of popular npm packages have typing defined on npm under the @types scoping.
 
@@ -44,18 +59,15 @@ via **yarn**
     yarn add @types/packageName -D
 ```
 
-
 ## Building
 
 Running the Build task in VSCode will compile TypeScript (/src) to es2015 JavaSript (/dist).
 
 Shortcut on Windows/Linux: Ctrl + Shift + B, macOS: Command + Shift + B
 
-
 ## Debugging
 
 Set breakpoints in your Ts code and press F5 to start the debugger, happy debugging!
-
 
 ## Debugging with Nodemon
 
@@ -65,7 +77,7 @@ the application is restarted.
 Nodemon debugging is supported. To enable, install nodemon globally
 and uncomment the nodemon section the .vscode/launch.json.
 
-When you wish to debug, use the nodemon debug launch command.
+When you wish to debug, use the nodemon debug launch command:
 
 via **npm**
 ```
@@ -84,7 +96,7 @@ Ts imports will work out of the box with [Quokka.js](https://quokkajs.com)
 
 ## Running
 
-To run the your code
+To run the your code:
 
 ```
     npm start
@@ -95,7 +107,7 @@ or
     yarn start
 ```
 
-This copmmand uses ts-node to run your application using your tsconfig.json compile options, running the code without build artifacts.
+This command uses ts-node to run your application using your tsconfig.json compile options, without compiling to JavaScript files.
 
 ## Customisations
 
