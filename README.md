@@ -31,6 +31,8 @@ via **[yarn](https://yarnpkg.com)**
     yarn
 ```
 
+The src/index.ts is your entry point, it has an StartUp class that is called to start your application! Add additional files to the src folder and import to your src/index.ts file to use as per the hello_world example.
+
 ## Adding 3rd Party Packages
 
 Open a terminal / command line, add a package:
