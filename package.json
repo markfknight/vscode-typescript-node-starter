@@ -1,15 +1,36 @@
 {
   "name": "vscode-typescript-node-starter",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "markfknight (dev@markfknight.com)",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node ./src/index.ts"
+    "start": "ts-node ./src/index.ts",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "pretest": "npm run lint",
+    "test": "jest"
   },
   "devDependencies": {
-    "@types/node": "^7.0.5",
-    "ts-node": "^2.1.0",
-    "tslint": "^4.5.1",
-    "typescript": "^2.2.1"
+    "@types/node": "^7.0.31",
+    "@types/jest": "^20.0.0",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.6",
+    "ts-node": "^3.0.6",
+    "tslint": "^5.4.3",
+    "tslint-language-service": "^0.9.6",
+    "typescript": "^2.4.0"
+  },
+  "jest": {
+    "mapCoverage": true,
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "notify": true,
+    "rootDir": "src/",
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/../node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
   }
 }
