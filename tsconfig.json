@@ -2,9 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "moduleResolution": "node",
-    "alwaysStrict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
+    "strict": true,
     "sourceMap": true,
     "target": "es2015",
     "lib": ["es6", "dom"],
@@ -16,6 +14,9 @@
   },
   "exclude": [
     "node_modules",
-    "jspm_modules"
+    "jspm_modules",
+    "**/*.spec.*",
+    "**/*.test.*",
+    "**/__tests__/*"
   ]
 }
