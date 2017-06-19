@@ -10,7 +10,10 @@
     "typeRoots": [
       "./node_modules/@types/"
     ],
-    "outDir": "dist/"
+    "outDir": "dist/",
+    "plugins": [
+      { "name": "tslint-language-service"}
+    ]
   },
   "exclude": [
     "node_modules",
