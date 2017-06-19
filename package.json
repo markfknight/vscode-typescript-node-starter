@@ -1,6 +1,6 @@
 {
   "name": "vscode-typescript-node-starter",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "markfknight (dev@markfknight.com)",
   "license": "MIT",
   "scripts": {
@@ -14,6 +14,14 @@
     "pretest": "npm run lint",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markfknight/vscode-typescript-node-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markfknight/vscode-typescript-node-starter/issues"
+  },
+  "homepage": "https://github.com/markfknight/vscode-typescript-node-starter#readme",
   "devDependencies": {
     "@types/jest": "^20.0.0",
     "@types/node": "^7.0.31",

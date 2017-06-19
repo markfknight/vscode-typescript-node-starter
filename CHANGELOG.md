@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 - Working on ts-node enabled Debugging @markfknight
 
+## [2.0.1] 2017-06-19
+### Fixed
+- tslint-language-service tsconfig plugin settings @markfknight
+
 ## [2.0.0] 2017-06-19
 ### Added
 - CHANGELOG @markfknight
