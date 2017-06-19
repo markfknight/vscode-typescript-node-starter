@@ -11,31 +11,33 @@
             "protocol": "auto",
             "program": "${workspaceRoot}/src/index.ts",
             "preLaunchTask": "tsc",
-            // "console": "integratedTerminal",
-            "sourceMaps": true,
-            "smartStep": true,
-            "outFiles": [
-                "${workspaceRoot}/dist/**/*.js"
-            ]
-        }
-        ,
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Nodemon",
-            "protocol": "inspector",
-            "runtimeExecutable": "nodemon",
-            "program": "${workspaceRoot}/src/index.ts",
-            "restart": true,
-            "port": 9229,
             "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "preLaunchTask": "tsc",
             "sourceMaps": true,
             "smartStep": true,
             "outFiles": [
                 "${workspaceRoot}/dist/**/*.js"
             ]
         }
+        // ,
+        // {
+        //     "type": "node",
+        //     "request": "launch",
+        //     "name": "Launch Nodemon",
+        //     "protocol": "inspector",
+        //     "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/nodemon",
+        //     "runtimeArgs": [
+        //         "--exitcrash"
+        //     ],
+        //     "program": "${workspaceRoot}/src/index.ts",
+        //     "console": "integratedTerminal",
+        //     "internalConsoleOptions": "neverOpen",
+        //     "preLaunchTask": "tsc",
+        //     // "restart": true,
+        //     "sourceMaps": true,
+        //     "smartStep": true,
+        //     "outFiles": [
+        //         "${workspaceRoot}/dist/**/*.js"
+        //     ]
+        // }
     ]
 }

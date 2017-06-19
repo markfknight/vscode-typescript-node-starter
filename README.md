@@ -1,28 +1,21 @@
 # VSCode TypeScript node starter
-Starter for developing Node apps in TypeScript with setup for VS Code debugging and optional nodemon.
+Starter for developing Node apps in TypeScript with setup for VS Code debugging with no global dependencies.
 
  The follwing is setup out of the box:
-* Linting
-* Testing
-* Build/Compile
-* VSCode debugging with optional nodemon
-* Running via ts-node
+* Linting via [ts-lint](https://palantir.github.io/tslint/)
+* Testing via [ts-jest](https://github.com/kulshekhar/ts-jest) and [Jest](https://facebook.github.io/jest/)
+* Dev Build/Compile/Run with [ts-node](https://github.com/TypeStrong/ts-node) and [nodemon](https://github.com/remy/nodemon)
+* Running with [ts-node](https://github.com/TypeStrong/ts-node)
+* Build via tsc to a /dist folder
+* VSCode debugging
 
 ## Prerequisites
 
 To start, **[node](https://nodejs.org)** is required.
 
-The [TypeScript](https://www.typescriptlang.org/) Compiler (tsc) is required in your path, install globally:
+**npm** (Node Package Manager) or **[yarn](https://yarnpkg.com)** can be used as package managers.
 
-via **npm**
-```
-    npm -g install typescript
-```
-
-via **[yarn](https://yarnpkg.com)**
-```
-    yarn add global typescript
-```
+The [TypeScript](https://www.typescriptlang.org/) Compiler (tsc) is included and not required in your path.
 
 ## Getting started
 
@@ -68,9 +61,9 @@ via **yarn**
     yarn add @types/packageName -D
 ```
 
-Both steps can be completed in one by using [typac](https://github.com/ewgenius/typac)
+Both steps can be completed in one by using [typac](https://github.com/ewgenius/typac).
 
-Install typac globally
+Install typac globally:
 
 via **npm**
 ```
@@ -82,7 +75,7 @@ via **yarn**
     yarn add global typac
 ```
 
-Install a package using the typac command
+Install a package using the typac command:
 
 e.g.
 ```
@@ -129,7 +122,7 @@ via **yarn**
 
 There is a pre-test hook that runs [ts-lint](https://palantir.github.io/tslint/) before tests are run.
 
- There is a very useful plugin [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) (free), an integrated continuous testing tool that adds test feedback to the editor and session based test watching.
+There is a very useful plugin [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) (free), an integrated continuous testing tool that adds test feedback to the editor and session based test watching.
 
 Another (multi-editor) integrated continuous testing plugin is the renowned [Wallaby.js](https://wallabyjs.com/) (paid) that this base setup should work out of the box with.
 
@@ -143,27 +136,7 @@ Shortcut on Windows/Linux: Ctrl + Shift + B, macOS: Command + Shift + B
 
 Set breakpoints in your TS code and press F5 to start the debugger, happy debugging!
 
-## Debugging with [nodemon](https://github.com/remy/nodemon)
-
-nodemon enables live reload of you node application, so when you make a change to code,
-the application is restarted.
-
-Nodemon debugging is supported. To enable, install nodemon globally
-and uncomment the nodemon section the .vscode/launch.json.
-
-When you wish to debug, use the nodemon debug launch command:
-
-via **npm**
-```
-    npm install -g nodemon
-```
-
-via **yarn**
-```
-    yarn add global nodemon
-```
-
-## Running
+## Running via [ts-node](https://github.com/TypeStrong/ts-node)
 
 To run the your code:
 
@@ -178,6 +151,36 @@ via **yarn**
 ```
 
 This command uses ts-node to run your application using your tsconfig.json compile options, without compiling to JavaScript files.
+
+## Running Dev
+To run the your code:
+
+via **npm**
+```
+    npm start:dev
+```
+
+via **yarn**
+```
+    yarn start:dev
+```
+
+This runs ts-node via nodemon so when changes are made the process is restarted for you.
+
+## Running Dev with Tests
+To run the your code:
+
+via **npm**
+```
+    npm start:dev:test
+```
+
+via **yarn**
+```
+    yarn start:dev:test
+```
+
+This runs ts-node via nodemon so when changes are made the process is restarted for you, and tests rerun.
 
 ## Live feedback
 

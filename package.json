@@ -1,18 +1,24 @@
 {
   "name": "vscode-typescript-node-starter",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "author": "markfknight (dev@markfknight.com)",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node ./src/index.ts",
+    "start": "npm run ts-node",
+    "start:dev": "nodemon --exec npm run ts-node",
+    "start:dev:test": "nodemon --exec npm run ts-node:test",
+    "ts-node": "ts-node ./src/index.ts",
+    "prets-node:test": "npm test",
+    "ts-node:test": "npm run ts-node",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "pretest": "npm run lint",
     "test": "jest"
   },
   "devDependencies": {
-    "@types/node": "^7.0.31",
     "@types/jest": "^20.0.0",
+    "@types/node": "^7.0.31",
     "jest": "^20.0.4",
+    "nodemon": "^1.11.0",
     "ts-jest": "^20.0.6",
     "ts-node": "^3.0.6",
     "tslint": "^5.4.3",
