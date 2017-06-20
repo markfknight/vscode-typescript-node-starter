@@ -18,7 +18,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - nodemon.json to manage nodemon settings @markfknight
 
 ### Changed
-- tsc task to use local tyscript @markfknight
+- tsc task to use local typescript @markfknight
 - README to detail new features @markfknight
 
 ### Removed
