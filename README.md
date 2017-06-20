@@ -157,7 +157,7 @@ To run the your code:
 
 via **npm**
 ```
-    npm start:dev
+    npm run start:dev
 ```
 
 via **yarn**
@@ -172,7 +172,7 @@ To run the your code:
 
 via **npm**
 ```
-    npm start:dev:test
+    npm run start:dev:test
 ```
 
 via **yarn**
