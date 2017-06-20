@@ -12,6 +12,7 @@
             "args": ["-w", "-p", "."],
             "showOutput": "silent",
             "isBackground": true,
+            "isBuildCommand": true,
             "problemMatcher": "$tsc-watch"
         }
     ]

@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 - Working on ts-node enabled Debugging @markfknight
 
+## [2.0.2] 2017-06-21
+### Fixed
+- Set TSC task as isBuildCommand @markfknight
+
 ## [2.0.1] 2017-06-19
 ### Fixed
 - tslint-language-service tsconfig plugin settings @markfknight
