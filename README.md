@@ -2,7 +2,7 @@
 Starter for developing Node apps in TypeScript with setup for VS Code debugging with no global dependencies.
 
  The follwing is setup out of the box:
-* Linting via [ts-lint](https://palantir.github.io/tslint/)
+* Linting via [tslint](https://palantir.github.io/tslint/)
 * Testing via [ts-jest](https://github.com/kulshekhar/ts-jest) and [Jest](https://facebook.github.io/jest/)
 * Dev Build/Compile/Run with [ts-node](https://github.com/TypeStrong/ts-node) and [nodemon](https://github.com/remy/nodemon)
 * Running with [ts-node](https://github.com/TypeStrong/ts-node)
@@ -26,7 +26,7 @@ via **npm**
     npm install
 ```
 
-via **[yarn](https://yarnpkg.com)**
+via **yarn**
 ```
     yarn
 ```
@@ -86,7 +86,7 @@ typac installs moment as a dependancy and @types/moment as a dev dependancy, via
 
 ## Linting
 
-The project is setup woth [ts-lint](https://palantir.github.io/tslint/) and the [tslint-language-service](https://github.com/angelozerr/tslint-language-service). Linting feedback should appear in the editor as you type, you can also run linting on the project:
+The project is setup woth [tslint](https://palantir.github.io/tslint/) and the [tslint-language-service](https://github.com/angelozerr/tslint-language-service). Linting feedback should appear in the editor as you type, you can also run linting on the project:
 
 via **npm**
 ```
@@ -120,7 +120,7 @@ via **yarn**
     yarn test
 ```
 
-There is a pre-test hook that runs [ts-lint](https://palantir.github.io/tslint/) before tests are run.
+There is a pre-test hook that runs [tslint](https://palantir.github.io/tslint/) before tests are run.
 
 There is a very useful plugin [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) (free), an integrated continuous testing tool that adds test feedback to the editor and session based test watching.
 
@@ -190,7 +190,7 @@ TS imports will work out of the box with [Quokka.js](https://quokkajs.com)
 
 For editor defaults, adjust editor.config.
 
-To change Ts linting, adjust tslint.json.
+To change TS linting, adjust tslint.json.
 
 Adjust the settings in tsconfig.json to change the compiled output.
 
