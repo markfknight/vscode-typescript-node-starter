@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 - Working on ts-node enabled Debugging @markfknight
 
+## [3.0.0] 2017-09-27
+### Changed
+- updated packages (jest 21)
+
 ## [2.0.2] 2017-06-21
 ### Fixed
 - Set TSC task as isBuildCommand @markfknight
