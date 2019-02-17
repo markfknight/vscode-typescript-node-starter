@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 - Working on ts-node enabled Debugging @markfknight
 
+## [4.0.1] 2019-02-17
+### Removed
+- removed yarn.lock @markfknight
+
 ## [4.0.0] 2019-02-17
 ### Changed
 - updated packages @markfknight
