@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 - Working on ts-node enabled Debugging @markfknight
 
+## [4.0.0] 2019-02-17
+### Changed
+- updated packages @markfknight
+
 ## [3.0.0] 2017-09-27
 ### Changed
 - updated packages (jest 21)
