@@ -124,7 +124,7 @@ the box with.
 ## Building
 
 Running the Build task in [VSCode](https://code.visualstudio.com/) will compile
-TypeScript (/src) to es2015 JavaSript (/dist).
+TypeScript (/src) to es2020 JavaSript (/dist).
 
 Shortcut on Windows/Linux: Ctrl + Shift + B, macOS: Command + Shift + B
 
