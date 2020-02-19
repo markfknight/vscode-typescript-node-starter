@@ -1,7 +1,7 @@
 {
   "name": "vscode-typescript-node-starter",
-  "version": "5.0.1",
-  "author": "markfknight (dev@markfknight.com)",
+  "version": "5.0.2",
+  "author": "markfknight (markfknight@gmail.com)",
   "license": "MIT",
   "scripts": {
     "start": "npm run ts-node",

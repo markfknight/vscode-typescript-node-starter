@@ -2,18 +2,17 @@
   "compilerOptions": {
     "module": "commonjs",
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "strict": true,
     "sourceMap": true,
     "target": "es2015",
-    "lib": ["es6", "dom"],
+    "lib": ["es2015"],
     "rootDir": "src/",
     "typeRoots": [
       "./node_modules/@types/"
     ],
     "outDir": "dist/",
-    "plugins": [
-      { "name": "tslint-language-service"}
-    ]
+    "plugins": []
   },
   "exclude": [
     "node_modules",

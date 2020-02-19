@@ -6,9 +6,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 - Working on ts-node enabled Debugging @markfknight
 
+## [5.0.2] 2020-02-19
+### Changed
+- tidyup of `tsconfig` @markfknight
+
 ## [5.0.1] 2020-02-19
 ### Changed
 - updated readme @markfknight
+- update contact email @markfknight
 
 ## [5.0.0] 2020-02-19
 ### Added
