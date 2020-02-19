@@ -6,6 +6,23 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 - Working on ts-node enabled Debugging @markfknight
 
+## [5.0.0] 2020-02-19
+### Added
+- added eslint @markfknight
+- added eslint ignore @markfknight
+- aded eslint config @markfknight
+- added package.lock @markfknight
+
+### Changed
+- update all packages @markfknight
+- rename files and exports for eslint @markfknight
+- updated ts-jest config @markfknight
+- updated node types to cuurent lts (node@12) @markfknight
+
+### Removed
+- removed tslint packages @markfknight
+- removed tslint configuration @markfknight
+
 ## [4.0.1] 2019-02-17
 ### Removed
 - removed yarn.lock @markfknight
@@ -16,7 +33,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [3.0.0] 2017-09-27
 ### Changed
-- updated packages (jest 21)
+- updated packages (jest 21) @markfknight
 
 ## [2.0.2] 2017-06-21
 ### Fixed
