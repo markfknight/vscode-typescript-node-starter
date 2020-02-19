@@ -1,6 +1,6 @@
 {
   "name": "vscode-typescript-node-starter",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "author": "markfknight (dev@markfknight.com)",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,7 @@
     "ts-node": "ts-node ./src/index.ts",
     "prets-node:test": "npm test",
     "ts-node:test": "npm run ts-node",
-    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "pretest": "npm run lint",
     "test": "jest"
   },
@@ -23,27 +23,28 @@
   },
   "homepage": "https://github.com/markfknight/vscode-typescript-node-starter#readme",
   "devDependencies": {
-    "@types/jest": "^24.0.5",
-    "@types/node": "^10.0.0",
-    "jest": "^24.1.0",
-    "nodemon": "^1.18.10",
-    "ts-jest": "^23.10.5",
-    "ts-node": "^8.0.2",
-    "tslint": "^5.12.1",
-    "typescript": "^3.3.3",
-    "typescript-tslint-plugin": "^0.3.1"
+    "@types/jest": "^25.1.2",
+    "@types/node": "^12.12.27",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "ts-jest": "^25.2.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
   },
   "jest": {
-    "mapCoverage": true,
     "moduleFileExtensions": [
       "ts",
       "tsx",
-      "js"
+      "js",
+      "jsx"
     ],
     "notify": true,
     "rootDir": "src/",
     "transform": {
-      ".(ts|tsx)": "<rootDir>/../node_modules/ts-jest/preprocessor.js"
+      ".(ts|tsx)": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
   }
