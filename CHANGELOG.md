@@ -6,6 +6,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 - Working on ts-node enabled Debugging @markfknight
 
+## [5.0.3] 2020-02-19
+### Changed
+- add DOM back to `tsconfig` @markfknight
+- complie js from es2015 to es2020
+
 ## [5.0.2] 2020-02-19
 ### Changed
 - tidyup of `tsconfig` @markfknight
