@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/markfknight/vscode-typescript-node-starter#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.21",
+    "@types/jest": "^27.4.1",
     "@types/node": "^12.12.27",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.20.0",
